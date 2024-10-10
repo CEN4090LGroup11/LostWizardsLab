@@ -1,0 +1,4 @@
+repository "LostWizardsLabyrinth@LostWizardsLabyrinth@cloud"
+  path "/"
+    br "/main"
+    co "/main"

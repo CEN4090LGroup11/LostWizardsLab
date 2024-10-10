@@ -1,0 +1,21 @@
+﻿<Properties StartupConfiguration="{FC4A4184-39C5-766C-BA2C-7FFE8003A881}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/ConvoStarter.cs">
+    <Files>
+      <File FileName="Assets/ConvoStarter.cs" Line="19" Column="2" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="LostWizardsLabyrinth" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="f9c38f2d-8ae3-4063-a81f-f9ca84b7b92b" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
