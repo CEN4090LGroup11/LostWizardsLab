@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638640830620000000
+      ticks: 638642889490000000
     m_Hash: 149038911
   m_LockFileStatus:
     m_FilePath: /Users/maddyburns/Desktop/LostWizardsLab/LostWizardsLabyrinth/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638640830620000000
+      ticks: 638642889490000000
     m_Hash: 35399175
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
@@ -2988,9 +2988,11 @@ m_ResolvedPackages:
     - 3.0.27
     - 3.0.28
     - 3.0.31
+    - 3.0.34
     compatible:
     - 3.0.31
-    recommended: 3.0.31
+    - 3.0.34
+    recommended: 3.0.34
     deprecated: []
   dependencies:
   - name: com.unity.ext.nunit
