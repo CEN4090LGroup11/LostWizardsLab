@@ -2,8 +2,8 @@ Unity Editor version:    2022.3.38f1 (c5d5a7410213)
 Branch:                  2022.3/staging
 Build type:              Release
 Batch mode:              YES
-macOS version:           Version 14.4.1 (Build 23E224)
-Darwin version:          23.4.0
+macOS version:           Version 14.5 (Build 23F79)
+Darwin version:          23.5.0
 Architecture:            arm64
 Running under Rosetta:   NO
 Available memory:        8192 MB
@@ -18,13 +18,13 @@ COMMAND LINE ARGUMENTS:
 -name
 AssetImportWorker0
 -projectPath
-/Users/carlysweeney/Documents/GitHub/LostWizardsLab/LostWizardsLabyrinth
+/Users/maddyburns/Desktop/LostWizardsLab/LostWizardsLabyrinth
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-56472
-Successfully changed project path to: /Users/carlysweeney/Documents/GitHub/LostWizardsLab/LostWizardsLabyrinth
-/Users/carlysweeney/Documents/GitHub/LostWizardsLab/LostWizardsLabyrinth
+52701
+Successfully changed project path to: /Users/maddyburns/Desktop/LostWizardsLab/LostWizardsLabyrinth
+/Users/maddyburns/Desktop/LostWizardsLab/LostWizardsLabyrinth
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
     "memorysetup-bucket-allocator-bucket-count=8"
@@ -56,18 +56,18 @@ Successfully changed project path to: /Users/carlysweeney/Documents/GitHub/LostW
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [8458418880]  Target information:
+Player connection [8538065920]  Target information:
 
-Player connection [8458418880]  * "[IP] 10.136.43.67 [Port] 0 [Flags] 2 [Guid] 846997760 [EditorId] 846997760 [Version] 1048832 [Id] OSXEditor(0,wc-dhcp43d067.employee-secure.wireless.fsu.edu) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
+Player connection [8538065920]  * "[IP] 10.142.126.193 [Port] 0 [Flags] 2 [Guid] 2281908491 [EditorId] 2281908491 [Version] 1048832 [Id] OSXEditor(0,dhcp193) [Debug] 1 [PackageName] OSXEditor [ProjectName] Editor" 
 
-Player connection [8458418880] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [8458418880] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [8538065920] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [8538065920] Host joined alternative multi-casting on [225.0.0.222:34997]...
 [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
-Refreshing native plugins compatible for Editor in 16.94 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 24.31 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.38f1 (c5d5a7410213)
 [Subsystems] Discovering subsystems at path /Applications/Unity/Hub/Editor/2022.3.38f1/Unity.app/Contents/Resources/UnitySubsystems
-[Subsystems] Discovering subsystems at path /Users/carlysweeney/Documents/GitHub/LostWizardsLab/LostWizardsLabyrinth/Assets
+[Subsystems] Discovering subsystems at path /Users/maddyburns/Desktop/LostWizardsLab/LostWizardsLabyrinth/Assets
 GfxDevice: creating device client; threaded=0; jobified=0
  preferred device: Apple M1 (high power)
 Metal devices available: 1
@@ -78,44 +78,44 @@ Initialize mono
 Mono path[0] = '/Applications/Unity/Hub/Editor/2022.3.38f1/Unity.app/Contents/Managed'
 Mono path[1] = '/Applications/Unity/Hub/Editor/2022.3.38f1/Unity.app/Contents/MonoBleedingEdge/lib/mono/unityjit-macos'
 Mono config path = '/Applications/Unity/Hub/Editor/2022.3.38f1/Unity.app/Contents/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56213
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56508
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /Applications/Unity/Hub/Editor/2022.3.38f1/Unity.app/Contents/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
-Registered in 0.004071 seconds.
-- Loaded All Assemblies, in  0.355 seconds
+Registered in 0.001661 seconds.
+- Loaded All Assemblies, in  0.265 seconds
 Native extension for OSXStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.218 seconds
-Domain Reload Profiling: 574ms
-	BeginReloadAssembly (101ms)
+- Finished resetting the current domain, in  0.181 seconds
+Domain Reload Profiling: 446ms
+	BeginReloadAssembly (84ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (49ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (50ms)
-	LoadAllAssembliesAndSetupDomain (146ms)
-		LoadAssemblies (101ms)
+	RebuildCommonClasses (26ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (34ms)
+	LoadAllAssembliesAndSetupDomain (112ms)
+		LoadAssemblies (84ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (143ms)
-			TypeCache.Refresh (142ms)
-				TypeCache.ScanAssembly (128ms)
+		AnalyzeDomain (110ms)
+			TypeCache.Refresh (108ms)
+				TypeCache.ScanAssembly (95ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (0ms)
-	FinalizeReload (218ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (181ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (170ms)
+		SetupLoadedEditorAssemblies (141ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (7ms)
+			InitializePlatformSupportModulesInManaged (6ms)
 			SetLoadedEditorAssemblies (6ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (121ms)
-			ProcessInitializeOnLoadMethodAttributes (35ms)
+			ProcessInitializeOnLoadAttributes (99ms)
+			ProcessInitializeOnLoadMethodAttributes (29ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -123,56 +123,56 @@ Domain Reload Profiling: 574ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.655 seconds
-Refreshing native plugins compatible for Editor in 2.05 ms, found 2 plugins.
+- Loaded All Assemblies, in  0.488 seconds
+Refreshing native plugins compatible for Editor in 0.71 ms, found 2 plugins.
 Native extension for OSXStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.460 seconds
-Domain Reload Profiling: 1129ms
-	BeginReloadAssembly (90ms)
+- Finished resetting the current domain, in  0.530 seconds
+Domain Reload Profiling: 1020ms
+	BeginReloadAssembly (87ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (3ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (23ms)
-	RebuildCommonClasses (31ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (30ms)
-	LoadAllAssembliesAndSetupDomain (507ms)
-		LoadAssemblies (299ms)
+		CreateAndSetChildDomain (28ms)
+	RebuildCommonClasses (25ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (24ms)
+	LoadAllAssembliesAndSetupDomain (345ms)
+		LoadAssemblies (232ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (228ms)
-			TypeCache.Refresh (209ms)
-				TypeCache.ScanAssembly (184ms)
-			ScanForSourceGeneratedMonoScriptInfo (13ms)
-			ResolveRequiredComponents (5ms)
-	FinalizeReload (460ms)
+		AnalyzeDomain (145ms)
+			TypeCache.Refresh (131ms)
+				TypeCache.ScanAssembly (112ms)
+			ScanForSourceGeneratedMonoScriptInfo (8ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (530ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (326ms)
+		SetupLoadedEditorAssemblies (423ms)
 			LogAssemblyErrors (0ms)
 			InitializePlatformSupportModulesInManaged (4ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (40ms)
-			ProcessInitializeOnLoadAttributes (259ms)
-			ProcessInitializeOnLoadMethodAttributes (18ms)
+			BeforeProcessingInitializeOnLoad (36ms)
+			ProcessInitializeOnLoadAttributes (368ms)
+			ProcessInitializeOnLoadMethodAttributes (12ms)
 			AfterProcessingInitializeOnLoad (1ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (3ms)
 Launching external process: /Applications/Unity/Hub/Editor/2022.3.38f1/Unity.app/Contents/Tools/UnityShaderCompiler
-Launched and connected shader compiler UnityShaderCompiler after 0.25 seconds
-Refreshing native plugins compatible for Editor in 1.25 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler after 0.21 seconds
+Refreshing native plugins compatible for Editor in 0.90 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3314 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 45 unused Assets / (1.8 MB). Loaded Objects now: 3789.
-Memory consumption went from 178.5 MB to 176.7 MB.
-Total: 8.463541 ms (FindLiveObjects: 0.671875 ms CreateObjectMapping: 0.067334 ms MarkObjects: 6.465833 ms  DeleteObjects: 1.257875 ms)
+Memory consumption went from 181.6 MB to 179.9 MB.
+Total: 4.015750 ms (FindLiveObjects: 0.140625 ms CreateObjectMapping: 0.048042 ms MarkObjects: 3.310792 ms  DeleteObjects: 0.515792 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -189,10 +189,46 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 2531295.405542 seconds.
-  path: Assets/TextMesh Pro/Examples & Extras/Prefabs/Text Popup.prefab
-  artifactKey: Guid(b06f0e6c1dfa4356ac918da1bb32c603) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/TextMesh Pro/Examples & Extras/Prefabs/Text Popup.prefab using Guid(b06f0e6c1dfa4356ac918da1bb32c603) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
- -> (artifact id: 'aa37647d3fd6675a0d8e944494f07518') in 0.063901 seconds
+  Time since last request: 603261.368040 seconds.
+  path: Assets/HatRing.png
+  artifactKey: Guid(c0e964db2ba794c7598e69e0e224935a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HatRing.png using Guid(c0e964db2ba794c7598e69e0e224935a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'a93357ef92b130ffaaa5c84ea6e92ded') in 0.094893 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 21
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 19.035189 seconds.
+  path: Assets/treeWizard.blend
+  artifactKey: Guid(dd39f8087174845a7ba9d34af245c772) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/treeWizard.blend using Guid(dd39f8087174845a7ba9d34af245c772) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: 'df1d89deb05adade9fa23ba181861ade') in 0.197980 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 39
+========================================================================
+Received Import Request.
+  Time since last request: 10.919563 seconds.
+  path: Assets/Treebark.png
+  artifactKey: Guid(e3f9c07efd7284f6ab259195dbeca8e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Treebark.png using Guid(e3f9c07efd7284f6ab259195dbeca8e3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 8 workers.
+ -> (artifact id: '63c4c460909f9bfeff9a3e2742ae86ed') in 0.040972 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
