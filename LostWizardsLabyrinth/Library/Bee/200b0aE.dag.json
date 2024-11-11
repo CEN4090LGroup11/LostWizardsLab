@@ -20582,8 +20582,13 @@
       "Annotation": "WriteText Library/Bee/artifacts/200b0aE.dag/Assembly-CSharp.rsp",
       "DisplayName": "Writing Assembly-CSharp.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1564883,
       "PayloadLength": 37299,
+=======
+      "PayloadOffset": 1565532,
+      "PayloadLength": 37384,
+>>>>>>> Stashed changes
       "PayloadDebugContentSnippet": "-target:library\n-out:\"Library/",
       "Inputs": [],
       "Outputs": [
@@ -20595,7 +20600,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/200b0aE.dag/Assembly-CSharp.rsp2",
       "DisplayName": "Writing Assembly-CSharp.rsp2",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1602268,
+=======
+      "PayloadOffset": 1603002,
+>>>>>>> Stashed changes
       "PayloadLength": 0,
       "PayloadDebugContentSnippet": "",
       "Inputs": [],
@@ -20864,9 +20873,12 @@
         "Assets/DialogueEditor/Assets/Scripts/UI/UIConversationButton.cs",
         "Assets/DialogueEditor/Example/ExampleInputManager.cs",
         "Assets/FantasyEnvironments/Environments/Town/Scripts/Door.cs",
+        "Assets/MainSceneManager.cs",
+        "Assets/Minigame1Assets/Scripts/GameManager.cs",
         "Assets/ModularFirstPersonController/FirstPersonController/FirstPersonController.cs",
         "Assets/Polytope Studio/Lowpoly_Demos/Environment_Free/Helpers/MouseLook.cs",
         "Assets/Polytope Studio/Lowpoly_Demos/Environment_Free/Helpers/PlayerMovement.cs",
+        "Assets/SceneManager/SceneSwitcher.cs",
         "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs",
         "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs",
         "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark02.cs",
@@ -21160,7 +21172,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/200b0aE.dag/Assembly-CSharp.dll.mvfrm.rsp",
       "DisplayName": "Writing Assembly-CSharp.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1602363,
+=======
+      "PayloadOffset": 1603097,
+>>>>>>> Stashed changes
       "PayloadLength": 9526,
       "PayloadDebugContentSnippet": "Library/Bee/artifacts/mvdfrm/U",
       "Inputs": [],
@@ -21411,9 +21427,15 @@
       "Annotation": "WriteText Library/Bee/artifacts/200b0aE.dag/Assembly-CSharp-Editor.UnityAdditionalFile.txt",
       "DisplayName": "Writing Assembly-CSharp-Editor.UnityAdditionalFile.txt",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1612001,
       "PayloadLength": 61,
       "PayloadDebugContentSnippet": "/Users/maddyburns/Desktop/Lost",
+=======
+      "PayloadOffset": 1612735,
+      "PayloadLength": 72,
+      "PayloadDebugContentSnippet": "/Users/carlysweeney/Documents/",
+>>>>>>> Stashed changes
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/200b0aE.dag/Assembly-CSharp-Editor.UnityAdditionalFile.txt"
@@ -21424,7 +21446,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/200b0aE.dag/Assembly-CSharp-Editor.rsp",
       "DisplayName": "Writing Assembly-CSharp-Editor.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1612154,
+=======
+      "PayloadOffset": 1612899,
+>>>>>>> Stashed changes
       "PayloadLength": 36293,
       "PayloadDebugContentSnippet": "-target:library\n-out:\"Library/",
       "Inputs": [],
@@ -21437,7 +21463,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/200b0aE.dag/Assembly-CSharp-Editor.rsp2",
       "DisplayName": "Writing Assembly-CSharp-Editor.rsp2",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1648540,
+=======
+      "PayloadOffset": 1649285,
+>>>>>>> Stashed changes
       "PayloadLength": 0,
       "PayloadDebugContentSnippet": "",
       "Inputs": [],
@@ -21769,7 +21799,11 @@
       "Annotation": "WriteText Library/Bee/artifacts/200b0aE.dag/Assembly-CSharp-Editor.dll.mvfrm.rsp",
       "DisplayName": "Writing Assembly-CSharp-Editor.dll.mvfrm.rsp",
       "ActionType": "WriteFile",
+<<<<<<< Updated upstream
       "PayloadOffset": 1648642,
+=======
+      "PayloadOffset": 1649387,
+>>>>>>> Stashed changes
       "PayloadLength": 10380,
       "PayloadDebugContentSnippet": "Library/Bee/artifacts/mvdfrm/U",
       "Inputs": [],

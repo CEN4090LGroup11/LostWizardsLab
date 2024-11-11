@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 145b9d88f21394d3eb008ac6c9e58220
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - gameTransform: {fileID: 5194683593679239382, guid: c4ada4cf7c148463ea34e94268f4bccd, type: 3}
+  - piecePrefab: {fileID: 5445710378392036240, guid: df6999bc6f29b434aa4822e5f648274e, type: 3}
+  - winPanel: {fileID: 4766121993350734171, guid: 1f41f9bede8614db68ea9a80194732ee, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
