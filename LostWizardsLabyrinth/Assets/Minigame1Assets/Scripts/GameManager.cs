@@ -73,13 +73,7 @@ public class GameManager : MonoBehaviour
         CreateGamePieces(0.01f);
         Shuffle();
 
-
-        //hide win panel until end
-        if(winPanel != null)
-        {
-            winPanel.SetActive(false);
-
-        }
+        winPanel.SetActive(false);
 
 
         
@@ -87,8 +81,7 @@ public class GameManager : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
-        
+    {   
 
         if(!shuffling && CheckCompletion())
         {
