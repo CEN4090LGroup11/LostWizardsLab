@@ -411,7 +411,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -449,9 +449,41 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1869118558}
     m_Modifications:
+    - target: {fileID: 2007479683927642675, guid: 1f41f9bede8614db68ea9a80194732ee, type: 3}
+      propertyPath: m_TextStyleHashCode
+      value: -1183493901
+      objectReference: {fileID: 0}
     - target: {fileID: 4766121993350734171, guid: 1f41f9bede8614db68ea9a80194732ee, type: 3}
       propertyPath: m_Name
       value: WinMessagePanel
+      objectReference: {fileID: 0}
+    - target: {fileID: 4766121993350734171, guid: 1f41f9bede8614db68ea9a80194732ee, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4911142730293948974, guid: 1f41f9bede8614db68ea9a80194732ee, type: 3}
+      propertyPath: m_fontSize
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 4911142730293948974, guid: 1f41f9bede8614db68ea9a80194732ee, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6367861542339090752, guid: 1f41f9bede8614db68ea9a80194732ee, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7991806334079495658, guid: 1f41f9bede8614db68ea9a80194732ee, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7991806334079495658, guid: 1f41f9bede8614db68ea9a80194732ee, type: 3}
+      propertyPath: m_Color.g
+      value: 0.6643977
+      objectReference: {fileID: 0}
+    - target: {fileID: 7991806334079495658, guid: 1f41f9bede8614db68ea9a80194732ee, type: 3}
+      propertyPath: m_Color.r
+      value: 0.3726415
       objectReference: {fileID: 0}
     - target: {fileID: 8427486002762207730, guid: 1f41f9bede8614db68ea9a80194732ee, type: 3}
       propertyPath: m_Pivot.x
@@ -533,8 +565,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8785919310291069658, guid: 1f41f9bede8614db68ea9a80194732ee, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 507.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8785919310291069658, guid: 1f41f9bede8614db68ea9a80194732ee, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 111.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 8785919310291069658, guid: 1f41f9bede8614db68ea9a80194732ee, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 672.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 8785919310291069658, guid: 1f41f9bede8614db68ea9a80194732ee, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 90.62
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 4131541920067509201, guid: 1f41f9bede8614db68ea9a80194732ee, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1f41f9bede8614db68ea9a80194732ee, type: 3}
@@ -616,7 +665,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 868036862}
+  - {fileID: 1869118558}
   - {fileID: 1887705525046655498}
   - {fileID: 43264665}
-  - {fileID: 1869118558}
   - {fileID: 1262864649}
