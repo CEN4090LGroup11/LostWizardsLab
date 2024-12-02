@@ -109,6 +109,7 @@
     <Compile Include="Assets/AQUAS-Lite/Scripts/AQUAS_Lite_Reflection.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextSelector_B.cs" />
     <Compile Include="Assets/AQUAS-Lite/Scripts/AQUAS_Lite_CamNav.cs" />
+    <Compile Include="Assets/MiniGame2Assets/Scripts/GameController.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/SkewTextExample.cs" />
     <Compile Include="Assets/Polytope Studio/Lowpoly_Demos/Environment_Free/Helpers/PlayerMovement.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/WarpTextExample.cs" />
@@ -123,6 +124,7 @@
     <Compile Include="Assets/DialogueEditor/Assets/Scripts/Conversation.cs" />
     <Compile Include="Assets/DialogueEditor/Example/ExampleInputManager.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextInfoDebugTool.cs" />
+    <Compile Include="Assets/MiniGame2Assets/Scripts/CardScript.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />

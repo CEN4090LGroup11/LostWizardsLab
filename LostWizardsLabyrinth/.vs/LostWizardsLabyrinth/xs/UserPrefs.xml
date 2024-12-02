@@ -1,40 +1,13 @@
 ﻿<Properties StartupConfiguration="{FC4A4184-39C5-766C-BA2C-7FFE8003A881}|">
-<<<<<<< Updated upstream
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/SceneManager/SceneSwitcher.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/MiniGame2Assets/Scripts/GameController.cs">
     <Files>
-      <File FileName="Assets/Minigame1Assets/Scripts/GameManager.cs" Line="175" Column="10" />
-      <File FileName="Assets/SceneManager/SceneSwitcher.cs" Line="46" Column="10" />
-      <File FileName="Assets/ConvoStarter.cs" Line="1" Column="1" />
-      <File FileName="Assets/MainSceneManager.cs" Line="14" Column="25" />
-=======
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Minigame1Assets/Scripts/GameManager.cs">
-    <Files>
-      <File FileName="Assets/Minigame1Assets/Scripts/GameManager.cs" Line="84" Column="6" />
-      <File FileName="Assets/SceneManager/SceneSwitcher.cs" />
-      <File FileName="Assets/ConvoStarter.cs" />
-      <File FileName="Assets/MainSceneManager.cs" />
->>>>>>> Stashed changes
+      <File FileName="Assets/MiniGame2Assets/Scripts/CardScript.cs" Line="24" Column="1" />
+      <File FileName="Assets/MiniGame2Assets/Scripts/GameController.cs" Line="7" Column="3" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="LostWizardsLabyrinth" expanded="True">
-            <Node name="Assets" expanded="True">
-              <Node name="Minigame1Assets" expanded="True">
-                <Node name="Scripts" expanded="True" />
-              </Node>
-              <Node name="SceneManager" expanded="True">
-                <Node name="SceneSwitcher.cs" selected="True" />
-              </Node>
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="37e47a8a-b532-4f74-9d23-8cf53fa2fd52" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="5fdd095d-8540-4d87-899f-e6582f6ea4ec" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

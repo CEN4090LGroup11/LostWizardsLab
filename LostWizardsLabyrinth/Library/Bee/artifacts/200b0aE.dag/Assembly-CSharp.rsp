@@ -379,6 +379,8 @@
 "Assets/FantasyEnvironments/Environments/Town/Scripts/Door.cs"
 "Assets/MainSceneManager.cs"
 "Assets/Minigame1Assets/Scripts/GameManager.cs"
+"Assets/MiniGame2Assets/Scripts/CardScript.cs"
+"Assets/MiniGame2Assets/Scripts/GameController.cs"
 "Assets/ModularFirstPersonController/FirstPersonController/FirstPersonController.cs"
 "Assets/Polytope Studio/Lowpoly_Demos/Environment_Free/Helpers/MouseLook.cs"
 "Assets/Polytope Studio/Lowpoly_Demos/Environment_Free/Helpers/PlayerMovement.cs"
