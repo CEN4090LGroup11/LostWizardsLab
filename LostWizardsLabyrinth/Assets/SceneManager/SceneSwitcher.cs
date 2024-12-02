@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class SceneSwitcher : MonoBehaviour
 {
 
-    public string sceneName = "MiniGame1";
+    public string sceneName;
 
     //will press F to interact with game marker and start minigame
     public KeyCode activationKey = KeyCode.F;
@@ -31,6 +31,7 @@ public class SceneSwitcher : MonoBehaviour
             MainSceneManager.instance.SavePlayerState(playerTransform);
 
         }
+
 
 
         SceneManager.LoadScene(sceneName);
