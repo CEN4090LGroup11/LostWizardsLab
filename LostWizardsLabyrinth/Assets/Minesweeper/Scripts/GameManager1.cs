@@ -1,8 +1,8 @@
 using System.Linq;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;  // For TextMeshPro support
-using UnityEngine.UI;  // For Button support
+using TMPro;  
+using UnityEngine.UI;  
 using UnityEngine.SceneManagement;
 
 
@@ -11,9 +11,9 @@ public class GameManager1 : MonoBehaviour {
   [SerializeField] private Transform gameHolder;
 
   [Header("UI Elements")]
-  [SerializeField] private GameObject gameOverUI;  // Panel or UI object that holds the Game Over text and button
-  [SerializeField] private TextMeshProUGUI gameOverText;      // TextMeshProUGUI element to display "You Lost"
-  [SerializeField] private Button restartButton;   // Button to restart the game
+  [SerializeField] private GameObject gameOverUI;  
+  [SerializeField] private TextMeshProUGUI gameOverText;    
+  [SerializeField] private Button restartButton;  
 
   private List<Tile> tiles = new();
 
@@ -23,18 +23,16 @@ public class GameManager1 : MonoBehaviour {
 
   private readonly float tileSize = 0.5f;
 
-  // Start is called before the first frame update
+  
   void Start() {
-    restartButton.onClick.AddListener(RestartGame);  // Add listener to restart the game
-    CreateGameBoard(9, 9, 10); // Easy
-    // CreateGameBoard(16, 16, 40); // Intermediate
-    // CreateGameBoard(30, 16, 99); // Expert
+    restartButton.onClick.AddListener(RestartGame); 
+    CreateGameBoard(9, 9, 10); 
     ResetGameState();
-    gameOverUI.SetActive(false);  // Hide the game over UI at the start
+    gameOverUI.SetActive(false); 
   }
 
   public void CreateGameBoard(int width, int height, int numMines) {
-    // Save the game parameters we're using.
+    
     this.width = width;
     this.height = height;
     this.numMines = numMines;
@@ -92,10 +90,10 @@ public class GameManager1 : MonoBehaviour {
     if (row < (height - 1)) {
       neighbours.Add(pos + width); // North
       if (col > 0) {
-        neighbours.Add(pos + width - 1); // North-West
+        neighbours.Add(pos + width - 1); // NorthWest
       }
       if (col < (width - 1)) {
-        neighbours.Add(pos + width + 1); // North-East
+        neighbours.Add(pos + width + 1); // NorthEast
       }
     }
     if (col > 0) {
@@ -107,10 +105,10 @@ public class GameManager1 : MonoBehaviour {
     if (row > 0) {
       neighbours.Add(pos - width); // South
       if (col > 0) {
-        neighbours.Add(pos - width - 1); // South-West
+        neighbours.Add(pos - width - 1); // SouthWest
       }
       if (col < (width - 1)) {
-        neighbours.Add(pos - width + 1); // South-East
+        neighbours.Add(pos - width + 1); // SouthEast
       }
     }
     return neighbours;
@@ -129,26 +127,37 @@ public class GameManager1 : MonoBehaviour {
       tile.ShowGameOverState();
     }
 
-    // Show the "You Lost. Try Again!" message and the restart button.
+    
     gameOverText.text = "You Lost. Try Again!";
     gameOverUI.SetActive(true);  // Activate the Game Over UI
   }
 
   public void CheckGameOver() {
-    // If there are numMines left active then we're done.
+    // If there are numMines left active then we done.
     int count = 0;
     foreach (Tile tile in tiles) {
-      if (tile.active) {
-        count++;
-      }
+        if (tile.active) {
+            count++;
+        }
     }
     if (count == numMines) {
-      // Flag and disable everything, we're done.
-      Debug.Log("Winner!");
-      foreach (Tile tile in tiles) {
-        tile.active = false;
-        tile.SetFlaggedIfMine();
-      }
+        Debug.Log("Winner!");
+
+        // Disable all remaining active tiles and flag the mines.
+        foreach (Tile tile in tiles) {
+            tile.active = false;
+            tile.SetFlaggedIfMine();
+        }
+
+        // Save the player's position in the current scene (i.e., the box location)
+        PlayerPrefs.SetFloat("LastPlayerPosX", 1035.424f);
+        PlayerPrefs.SetFloat("LastPlayerPosY", -8.44725f);
+        PlayerPrefs.SetFloat("LastPlayerPosZ", 825.9868f);
+
+        // Load the main scene and place the player at the saved position
+        SceneManager.LoadScene("MainScene");
+
+        // This code will be handled in the Main Scene script (SceneReturn) as shown in the previous response
     }
   }
 
@@ -162,9 +171,9 @@ public class GameManager1 : MonoBehaviour {
         flag_count++;
       }
     }
-    // If we have the right number click surrounding tiles.
+    // If we have the right number click surrounding tiles
     if (flag_count == tile.mineCount) {
-      // Clicking a flag does nothing so this is safe.
+      // Clicking a flag does nothing so this is safe
       ClickNeighbours(tile);
     }
   }
@@ -179,4 +188,6 @@ public class GameManager1 : MonoBehaviour {
     CreateGameBoard(9, 9, 10);  // Reset the board
     ResetGameState();
   }
+
+
 }
