@@ -27,6 +27,7 @@ public class MainSceneManager : MonoBehaviour
 
     public void SavePlayerState(Transform playerTransform)
     {
+        // maybe add instance.playerSpawnPosition
         playerSpawnPosition = playerTransform.position;
         playerSpawnRotation = playerTransform.rotation;
     }
