@@ -14,4 +14,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Minesweeper.unity
     guid: 1d3b8ecd2b9ee420a8b1d3e4e5f07194
+  - enabled: 1
+    path: Assets/MiniGolf/Scenes/Level1.unity
+    guid: f7863459ff4e747509143d5884a58e9b
+  - enabled: 1
+    path: Assets/MiniGolf/Scenes/Level2.unity
+    guid: 87645174cd4ed430488e6a23947ac4bd
+  - enabled: 1
+    path: Assets/MiniGolf/Scenes/Level3.unity
+    guid: 476e1f03ed6754d71be51d679e87df29
+  - enabled: 1
+    path: Assets/MiniGolf/Scenes/Level4.unity
+    guid: 6e0bad64bf09843fe943b8030c369390
+  - enabled: 1
+    path: Assets/MiniGolf/Scenes/Level5.unity
+    guid: 5fe11a5035b48492eacd03b27b9921cc
   m_configObjects: {}

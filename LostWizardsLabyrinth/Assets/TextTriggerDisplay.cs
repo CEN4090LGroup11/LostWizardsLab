@@ -51,7 +51,7 @@ public class TriggerTextDisplay : MonoBehaviour
     {
         if (playerInRange && Input.GetKeyDown(KeyCode.F))
         {
-            Debug.Log("Interacted with the Wizard!");
+            Debug.Log("Player Interacted");
         }
     }
 }
