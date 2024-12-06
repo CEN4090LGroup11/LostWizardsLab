@@ -27,6 +27,9 @@ EditorBuildSettings:
     path: Assets/MiniGolf/Scenes/Level4.unity
     guid: 6e0bad64bf09843fe943b8030c369390
   - enabled: 1
-    path: Assets/MiniGolf/Scenes/Level5.unity
+    path: Assets/MiniGolf/Scenes/HowToPlay.unity
     guid: 5fe11a5035b48492eacd03b27b9921cc
+  - enabled: 1
+    path: Assets/MiniGolf/Scenes/Level5.unity
+    guid: 6ed874a1d9b4f42938628763eb2f881e
   m_configObjects: {}

@@ -57,7 +57,7 @@ public class Ball : MonoBehaviour
         float distance = Vector2.Distance((Vector2)transform.position, pos);
         isDragging = false;
 
-        if (distance < 1f) {
+        if (distance < 0.2f) {
             return;
         }
 
