@@ -32,4 +32,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/MiniGolf/Scenes/Level5.unity
     guid: 6ed874a1d9b4f42938628763eb2f881e
+  - enabled: 1
+    path: Assets/MainMenu/Settings.unity
+    guid: a23f684d6216449b5841779a432469bd
+  - enabled: 1
+    path: Assets/MainMenu/MainMenu.unity
+    guid: 3ff1a3fa6e5a04db7a870ab3604ba068
+  - enabled: 1
+    path: Assets/MainMenu/CharPick.unity
+    guid: dc6525cc8dcd7453ead7abca690eb711
   m_configObjects: {}
