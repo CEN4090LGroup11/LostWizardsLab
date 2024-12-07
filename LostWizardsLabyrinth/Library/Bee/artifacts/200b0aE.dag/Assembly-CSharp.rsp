@@ -405,6 +405,7 @@
 "Assets/DialogueEditor/Example/ExampleInputManager.cs"
 "Assets/FantasyEnvironments/Environments/Town/Scripts/Door.cs"
 "Assets/LevelManager.cs"
+"Assets/MainMenu/ExitGame.cs"
 "Assets/MainSceneManager.cs"
 "Assets/Minesweeper/Scripts/GameManager1.cs"
 "Assets/Minesweeper/Scripts/Tile.cs"
