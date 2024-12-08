@@ -4,34 +4,34 @@ public class SceneReturn : MonoBehaviour
 {
     public Transform player; // Reference to the player object (Drag the player in the Inspector)
 
-    private Vector3 startingPosition = new Vector3(812.0292f, .846304f, 710.4568f); // Default starting position
+    private Vector3 startingPosition = new Vector3(812f, 0f, 772.1f); // Default starting position
 
     void Start()
     {
-        // Ensure the player object is assigned in the inspector
-        if (player == null)
-        {
-            Debug.LogError("Player object not assigned in SceneReturn script.");
-            return;
-        }
+        // Check if the game is running in the Editor or Build
+        #if UNITY_EDITOR
+            // In the editor, always reset position
+            PlayerPrefs.DeleteAll();
+        #else
+            // In a build, reset only if needed
+            if (!PlayerPrefs.HasKey("LastPlayerPosX"))
+            {
+                // Reset to default spawn position
+                SetPlayerPosition(startingPosition);
+            }
+        #endif
 
-        // Check if player has saved position in PlayerPrefs, if not, it's the first time
+        // Continue with your normal start logic
         if (PlayerPrefs.HasKey("LastPlayerPosX") && PlayerPrefs.HasKey("LastPlayerPosY") && PlayerPrefs.HasKey("LastPlayerPosZ"))
         {
-            // Retrieve the saved position from PlayerPrefs
-            float savedX = PlayerPrefs.GetFloat("LastPlayerPosX", 0f);  // Default to 0 if not set
-            float savedY = PlayerPrefs.GetFloat("LastPlayerPosY", 1f);  // Ensure Y is above the ground
-            float savedZ = PlayerPrefs.GetFloat("LastPlayerPosZ", 0f);  // Default to 0 if not set
-
-            // Ensure the player position is above the ground and set position
-            Vector3 savedPosition = new Vector3(savedX, Mathf.Max(savedY, 1f), savedZ); // Make sure Y is above the ground
-
-            // Set the saved position
+            float savedX = PlayerPrefs.GetFloat("LastPlayerPosX", 0f);
+            float savedY = PlayerPrefs.GetFloat("LastPlayerPosY", 1f);
+            float savedZ = PlayerPrefs.GetFloat("LastPlayerPosZ", 0f);
+            Vector3 savedPosition = new Vector3(savedX, Mathf.Max(savedY, 1f), savedZ);
             SetPlayerPosition(savedPosition);
         }
         else
         {
-            // No saved position found, spawn at default starting position
             SetPlayerPosition(startingPosition);
         }
     }
@@ -53,43 +53,3 @@ public class SceneReturn : MonoBehaviour
         }
     }
 }
-
-/*using UnityEngine;
-
-public class SceneReturn : MonoBehaviour
-{
-    public Transform player; // Reference to the player object (Drag the player in the Inspector)
-
-    void Start()
-    {
-        // Ensure the player object is assigned in the inspector
-        if (player == null)
-        {
-            Debug.LogError("Player object not assigned in SceneReturn script.");
-            return;
-        }
-
-        // Retrieve the saved position from PlayerPrefs
-        float savedX = PlayerPrefs.GetFloat("LastPlayerPosX", 0f);  // Default to 0 if not set
-        float savedY = PlayerPrefs.GetFloat("LastPlayerPosY", 1f);  // Ensure Y is above the ground
-        float savedZ = PlayerPrefs.GetFloat("LastPlayerPosZ", 0f);  // Default to 0 if not set
-
-        // Ensure the player position is above the ground and set position
-        Vector3 savedPosition = new Vector3(savedX, Mathf.Max(savedY, 1f), savedZ); // Make sure Y is above the ground
-
-        // Check if player has a Rigidbody
-        Rigidbody rb = player.GetComponent<Rigidbody>();
-
-        if (rb != null)
-        {
-            // If Rigidbody is present, use MovePosition to respect physics
-            rb.MovePosition(savedPosition);
-        }
-        else
-        {
-            // If no Rigidbody, set position directly (not recommended for physics-based movement)
-            player.position = savedPosition;
-        }
-    }
-}
-*/
