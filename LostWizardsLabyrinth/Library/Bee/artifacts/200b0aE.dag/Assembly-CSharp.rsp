@@ -410,6 +410,8 @@
 "Assets/Minesweeper/Scripts/GameManager1.cs"
 "Assets/Minesweeper/Scripts/Tile.cs"
 "Assets/Minigame1Assets/Scripts/GameManager.cs"
+"Assets/MiniGame2Assets/Scripts/CardScript.cs"
+"Assets/MiniGame2Assets/Scripts/GameController.cs"
 "Assets/MiniGolf/Scripts/Ball.cs"
 "Assets/ModularFirstPersonController/FirstPersonController/FirstPersonController.cs"
 "Assets/PauseMenuManager.cs"
