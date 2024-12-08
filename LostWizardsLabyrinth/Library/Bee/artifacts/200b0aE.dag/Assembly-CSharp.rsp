@@ -412,6 +412,7 @@
 "Assets/Minigame1Assets/Scripts/GameManager.cs"
 "Assets/MiniGolf/Scripts/Ball.cs"
 "Assets/ModularFirstPersonController/FirstPersonController/FirstPersonController.cs"
+"Assets/PauseMenuManager.cs"
 "Assets/Polytope Studio/Lowpoly_Demos/Environment_Free/Helpers/MouseLook.cs"
 "Assets/Polytope Studio/Lowpoly_Demos/Environment_Free/Helpers/PlayerMovement.cs"
 "Assets/SceneManager/SceneSwitcher.cs"

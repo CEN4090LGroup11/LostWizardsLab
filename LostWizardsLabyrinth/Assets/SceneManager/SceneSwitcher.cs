@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -7,12 +5,14 @@ public class SceneSwitcher : MonoBehaviour
 {
     private bool playerInside = false;
     public string sceneName;
+    private Transform player; // Reference to the player
 
     void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player")) // Assuming your player has the tag "Player"
         {
             playerInside = true;
+            player = other.transform; // Store the reference to the player
         }
     }
 
@@ -21,6 +21,7 @@ public class SceneSwitcher : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerInside = false;
+            player = null; // Reset the player reference when they exit the trigger
         }
     }
 
@@ -28,13 +29,21 @@ public class SceneSwitcher : MonoBehaviour
     {
         if (playerInside && Input.GetKeyDown(KeyCode.F))
         {
-            // Save the player's position
-            PlayerPrefs.SetFloat("LastPlayerPosX", transform.position.x);
-            PlayerPrefs.SetFloat("LastPlayerPosY", transform.position.y);
-            PlayerPrefs.SetFloat("LastPlayerPosZ", transform.position.z);
-            
-            // Switch to Scene 2
-            SceneManager.LoadScene(sceneName);
+            // Ensure the player reference is not null before saving
+            if (player != null)
+            {
+                // Save the player's position
+                PlayerPrefs.SetFloat("LastPlayerPosX", player.position.x);
+                PlayerPrefs.SetFloat("LastPlayerPosY", player.position.y);
+                PlayerPrefs.SetFloat("LastPlayerPosZ", player.position.z);
+
+                // Save the player position data
+                PlayerPrefs.Save();
+
+                // Switch to the specified scene
+                SceneManager.LoadScene(sceneName);
+            }
         }
     }
 }
+
