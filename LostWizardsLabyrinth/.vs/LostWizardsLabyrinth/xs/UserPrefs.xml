@@ -1,15 +1,15 @@
 ﻿<Properties StartupConfiguration="{FC4A4184-39C5-766C-BA2C-7FFE8003A881}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/MiniGame2Assets/Scripts/CardScript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/MiniGame2Assets/Scripts/GameController.cs">
     <Files>
       <File FileName="Assets/MiniGame2Assets/Scripts/CardScript.cs" Line="51" Column="53" />
-      <File FileName="Assets/MiniGame2Assets/Scripts/GameController.cs" Line="162" Column="1" />
-      <File FileName="Assets/SceneManager/SceneSwitcher.cs" Line="1" Column="1" />
-      <File FileName="Assets/Minigame1Assets/Scripts/GameManager.cs" Line="173" Column="1" />
+      <File FileName="Assets/MiniGame2Assets/Scripts/GameController.cs" Line="161" Column="1" />
+      <File FileName="Assets/SceneManager/SceneSwitcher.cs" />
+      <File FileName="Assets/Minigame1Assets/Scripts/GameManager.cs" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="3974e8cb-c4db-4e81-be4e-9d00e0f74b75" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="6a6c24df-f2a8-469a-9e9b-bf105f85b926" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

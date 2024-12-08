@@ -28,7 +28,7 @@ public class GameController : MonoBehaviour
         float yPosition = 2.3f;
         float xPosition = -2.2f;
 
-        for (int i = 0; i < 8; i++)
+        for (int i = 0; i < 7; i++)
         {
             shuffleNum = rand.Next(0, (faceIndexes.Count));
 
