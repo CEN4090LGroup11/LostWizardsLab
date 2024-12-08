@@ -28,7 +28,7 @@ public class GameController : MonoBehaviour
         float yPosition = 2.3f;
         float xPosition = -2.2f;
 
-        for (int i = 0; i < 7; i++)
+        for (int i = 0; i < 8; i++)
         {
             shuffleNum = rand.Next(0, (faceIndexes.Count));
 
@@ -148,7 +148,7 @@ public class GameController : MonoBehaviour
 
         foreach(CardScript card in cards)
         {
-            if(card.GetComponent<CardScript>().faceIndex == index)
+            if(card.faceIndex == index)
             {
                 pair.Add(card);
             }

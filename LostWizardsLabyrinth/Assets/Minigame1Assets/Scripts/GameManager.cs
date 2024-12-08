@@ -171,7 +171,6 @@ public class GameManager : MonoBehaviour
 
         SceneManager.LoadScene("MainScene");
 
-
     }
 
     
