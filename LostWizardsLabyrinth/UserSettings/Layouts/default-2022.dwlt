@@ -120,7 +120,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 42894
+  controlID: 10386
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -173,7 +173,7 @@ MonoBehaviour:
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 8096, y: 16192}
   vertical: 1
-  controlID: 42927
+  controlID: 10395
   draggingID: 0
 --- !u!114 &8
 MonoBehaviour:
@@ -715,14 +715,14 @@ MonoBehaviour:
   m_OverrideSceneCullingMask: 6917529027641081856
   m_SceneIsLit: 0
   m_SceneLighting: 1
-  m_2DMode: 1
+  m_2DMode: 0
   m_isRotationLocked: 0
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 960, y: 540, z: 0}
+    m_Target: {x: 914.6291, y: -46.816708, z: 560.08}
     speed: 2
-    m_Value: {x: 960, y: 540, z: 0}
+    m_Value: {x: 914.6291, y: -46.816708, z: 560.08}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -768,17 +768,17 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0, y: 0, z: 0, w: 1}
+    m_Target: {x: 0.21314798, y: 0.70888704, z: -0.24068263, w: 0.62778896}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0, w: 1}
+    m_Value: {x: 0.21314798, y: 0.70888704, z: -0.24068263, w: 0.62778896}
   m_Size:
-    m_Target: 1101.4536
+    m_Target: 734.6951
     speed: 2
-    m_Value: 1101.4536
+    m_Value: 734.6951
   m_Ortho:
-    m_Target: 1
+    m_Target: 0
     speed: 2
-    m_Value: 1
+    m_Value: 0
   m_CameraSettings:
     m_Speed: 1
     m_SpeedNormalized: 0.5
@@ -835,10 +835,10 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 1aad0000
+      scrollPos: {x: 0, y: 833}
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 2efdfeff6203ffffb00affffb60affff800dffffc00dffff120efffff612ffff381afffff21cffff6220ffffba24ffff5026ffffae26ffff7028ffff822cffff8835ffff4036ffff9c51fffffa54fffffe54ffff405cffff9663ffffc066ffff7467ffffea6effffde77ffff3078ffff8878ffff0a79ffff3482ffff848cffffbc8dffff6092ffff3693ffffa897ffff269cffffea9fffff9ea0ffff16a7ffff10a8ffffbcaeffffd8aefffff8b7ffff6ac6ffffaac6ffff8ad1ffffa0d5ffff08d6ffffeefaffff9a7e0000668d0000808d0000e88d00001a8e0000388e0000488e0000608e00007a8e00003a8f0000548f00007c8f0000bc8f0000e28f00001c97000074970000389a00000aa900002aad0000f2ad000046b5000058b500005ab6000052b7000064b70000
+      m_ExpandedIDs: 3e88feffc095feffbc9afeffc2a1feffd0a3fefffaa5feff3aa6feff14f4ffff1af4ffff48f9ffffeefaffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -907,7 +907,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/MainMenu
+    - Assets
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -915,16 +915,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/MainMenu
+  - Assets
   m_LastFoldersGridSize: -1
   m_LastProjectPath: /Users/maddyburns/Desktop/LostWizardsLab/LostWizardsLabyrinth
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 78.00049}
-    m_SelectedIDs: 4e750000
-    m_LastClickedID: 30030
-    m_ExpandedIDs: 000000009e74000004750000127500007e82000000ca9a3b
+    scrollPos: {x: 0, y: 31}
+    m_SelectedIDs: 78690000
+    m_LastClickedID: 27000
+    m_ExpandedIDs: 00000000786900007a6900007c6900007e6900009e690000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -952,7 +952,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000009e74000004750000127500007e82000000ca9a3b
+    m_ExpandedIDs: 00000000786900007a6900007c6900007e6900009e690000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1004,10 +1004,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 0}
+    m_ScrollPosition: {x: 0, y: 523.9984}
     m_GridSize: 64
   m_SkipHiddenPackages: 0
-  m_DirectoriesAreaWidth: 129
+  m_DirectoriesAreaWidth: 154
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
