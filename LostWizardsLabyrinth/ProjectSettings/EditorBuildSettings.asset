@@ -4,28 +4,13 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-<<<<<<< Updated upstream
-  m_Scenes: []
-=======
   m_Scenes:
-  - enabled: 1
-    path: Assets/MainMenu/MainMenu.unity
-    guid: 3ff1a3fa6e5a04db7a870ab3604ba068
-  - enabled: 1
-    path: Assets/MainMenu/Settings.unity
-    guid: a23f684d6216449b5841779a432469bd
-  - enabled: 1
-    path: Assets/MiniGolf/Scenes/HowToPlay.unity
-    guid: 0839b11eb7e354eddaefda37729b0c4a
-  - enabled: 1
-    path: Assets/MainMenu/CharPick.unity
-    guid: dc6525cc8dcd7453ead7abca690eb711
-  - enabled: 1
-    path: Assets/MainScene.unity
-    guid: ad5a2e398cb0543c1b7355aef5d7a6f2
   - enabled: 1
     path: Assets/MiniGame1.unity
     guid: 17fc6dd8c09d84a2b8ad684d3744f8b6
+  - enabled: 1
+    path: Assets/MainScene.unity
+    guid: ad5a2e398cb0543c1b7355aef5d7a6f2
   - enabled: 1
     path: Assets/Minesweeper.unity
     guid: 1d3b8ecd2b9ee420a8b1d3e4e5f07194
@@ -42,10 +27,21 @@ EditorBuildSettings:
     path: Assets/MiniGolf/Scenes/Level4.unity
     guid: 6e0bad64bf09843fe943b8030c369390
   - enabled: 1
+    path: Assets/MiniGolf/Scenes/HowToPlay.unity
+    guid: 5fe11a5035b48492eacd03b27b9921cc
+  - enabled: 1
     path: Assets/MiniGolf/Scenes/Level5.unity
     guid: 6ed874a1d9b4f42938628763eb2f881e
   - enabled: 1
+    path: Assets/MainMenu/Settings.unity
+    guid: a23f684d6216449b5841779a432469bd
+  - enabled: 1
+    path: Assets/MainMenu/MainMenu.unity
+    guid: 3ff1a3fa6e5a04db7a870ab3604ba068
+  - enabled: 1
+    path: Assets/MainMenu/CharPick.unity
+    guid: dc6525cc8dcd7453ead7abca690eb711
+  - enabled: 1
     path: Assets/WinGameScene/WinGame.unity
     guid: 31b722b7079824768a7587a47d14d84b
->>>>>>> Stashed changes
   m_configObjects: {}
