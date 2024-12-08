@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameController : MonoBehaviour
 {
@@ -16,7 +17,7 @@ public class GameController : MonoBehaviour
     public int shuffleNum = 0;
 
     //this will hold what 2 card faces are up
-    int[] visibleFaces = { -1, -2 };
+    public int[] visibleFaces = { -1, -2 };
 
 
     private void Start()
@@ -37,7 +38,11 @@ public class GameController : MonoBehaviour
 
             //assign face based on random number generated
             temp.GetComponent<CardScript>().faceIndex = faceIndexes[shuffleNum];
-            faceIndexes.Remove(faceIndexes[shuffleNum]);
+
+
+            Debug.Log($"Card {i}: faceIndex = {faceIndexes[shuffleNum]}");
+
+            faceIndexes.RemoveAt(shuffleNum);
 
             cards.Add(temp.GetComponent<CardScript>());
 
@@ -53,9 +58,16 @@ public class GameController : MonoBehaviour
 
         }
 
-        token.GetComponent<CardScript>().faceIndex = faceIndexes[0];
+        if(faceIndexes.Count > 0)
+        {
+            token.GetComponent<CardScript>().faceIndex = faceIndexes[0];
+        }
+        else
+        {
+            Debug.LogError("faceIndexes is empty after card assignemnt");
+        }
+        
        
-
     }
 
 
@@ -90,6 +102,10 @@ public class GameController : MonoBehaviour
         {
             visibleFaces[1] = index;
         }
+
+
+        Debug.Log($"Add faces: visible faces after = {visibleFaces[0]}, {visibleFaces[1]}");
+
     }
 
     public void removeFaces(int index)
@@ -113,7 +129,6 @@ public class GameController : MonoBehaviour
         if(visibleFaces[0] == visibleFaces[1])
         {
             success = true;
-
 
             //take them out of array bc we will remove them once match
             visibleFaces[0] = -1;
@@ -140,5 +155,31 @@ public class GameController : MonoBehaviour
         }
 
         return pair;
+    }
+
+
+
+
+    public void checkWin()
+    {
+
+        int matchedCount = 0;
+
+        foreach (CardScript card in cards)
+        {
+
+            if(card.matched)
+            {
+                matchedCount++;
+            }
+        }
+
+
+
+        if(matchedCount == cards.Count)
+        {
+            //switch back to main game scene
+            SceneManager.LoadScene("MainScene");
+        }
     }
 }

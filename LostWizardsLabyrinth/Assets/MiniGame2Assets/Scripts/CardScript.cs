@@ -15,29 +15,50 @@ public class CardScript : MonoBehaviour
 
     public void OnMouseDown()
     {
+        if (matched) return;
+
         if(matched == false)
         {
-
             if (spriteRenderer.sprite == IconBack)
             {
 
                 //only flip card if two cards not up
                 if (gameControl.GetComponent<GameController>().ShowingTwoCards() == false)
                 {
-                    spriteRenderer.sprite = IconFaces[faceIndex];
 
-                    //log it into our list of what cards are up
-                    gameControl.GetComponent<GameController>().addFaces(faceIndex);
-
-                    matched = gameControl.GetComponent<GameController>().checkMatch();
-
-                    if (matched)
+                    if (faceIndex >= 0 && faceIndex < IconFaces.Length)
                     {
+                        spriteRenderer.sprite = IconFaces[faceIndex];
 
-                        List<CardScript> setToTrue = gameControl.GetComponent<GameController>().findMatchedCard(faceIndex);
 
-                        setToTrue[0].matched = true;
-                        setToTrue[1].matched = true;
+                        Debug.Log($"Card flipped : faceIndex = {faceIndex}");
+
+                        Debug.Log($"Visible faces before update: {gameControl.GetComponent<GameController>().visibleFaces[0]}, {gameControl.GetComponent<GameController>().visibleFaces[1]}");
+
+                        //log it into our list of what cards are up
+                        gameControl.GetComponent<GameController>().addFaces(faceIndex);
+
+                        matched = gameControl.GetComponent<GameController>().checkMatch();
+
+                        if(matched)
+                        {
+
+                            List<CardScript> setToTrue = gameControl.GetComponent<GameController>().findMatchedCard(faceIndex);
+
+
+                            foreach(var card in setToTrue)
+                            {
+                                card.matched = true;
+                            }
+
+                            gameControl.GetComponent<GameController>().checkWin();
+
+                        }
+
+                    }
+                    else
+                    {
+                        Debug.LogWarning($"Invalid Faceindex: {faceIndex}");
                     }
 
                 }
