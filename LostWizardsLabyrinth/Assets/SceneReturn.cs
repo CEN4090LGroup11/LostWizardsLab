@@ -4,7 +4,7 @@ public class SceneReturn : MonoBehaviour
 {
     public Transform player; // Reference to the player object (Drag the player in the Inspector)
 
-    private Vector3 startingPosition = new Vector3(812f, -5.199997f, 770.1f); // Default starting position
+    private Vector3 startingPosition = new Vector3(812.0292f, .846304f, 710.4568f); // Default starting position
 
     void Start()
     {
