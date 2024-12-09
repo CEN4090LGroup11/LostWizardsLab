@@ -111,6 +111,7 @@
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/VertexZoom.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark02.cs" />
     <Compile Include="Assets/DialogueEditor/Assets/Scripts/NPCConversation.cs" />
+    <Compile Include="Assets/StepManager.cs" />
     <Compile Include="Assets/AQUAS-Lite/Scripts/AQUAS_Lite_Reflection.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/TMP_TextSelector_B.cs" />
     <Compile Include="Assets/AQUAS-Lite/Scripts/AQUAS_Lite_CamNav.cs" />
@@ -126,6 +127,7 @@
     <Compile Include="Assets/ConvoStarter.cs" />
     <Compile Include="Assets/ModularFirstPersonController/FirstPersonController/FirstPersonController.cs" />
     <Compile Include="Assets/TextMesh Pro/Examples &amp; Extras/Scripts/Benchmark03.cs" />
+    <Compile Include="Assets/StepBlocker.cs" />
     <Compile Include="Assets/MainMenu/ExitGame.cs" />
     <Compile Include="Assets/DialogueEditor/Assets/Scripts/Conversation.cs" />
     <Compile Include="Assets/DialogueEditor/Example/ExampleInputManager.cs" />

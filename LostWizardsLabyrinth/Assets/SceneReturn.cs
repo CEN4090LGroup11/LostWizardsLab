@@ -8,30 +8,21 @@ public class SceneReturn : MonoBehaviour
 
     void Start()
     {
-        // Check if the game is running in the Editor or Build
-        #if UNITY_EDITOR
-            // In the editor, always reset position
-            PlayerPrefs.DeleteAll();
-        #else
-            // In a build, reset only if needed
-            if (!PlayerPrefs.HasKey("LastPlayerPosX"))
-            {
-                // Reset to default spawn position
-                SetPlayerPosition(startingPosition);
-            }
-        #endif
-
-        // Continue with your normal start logic
+        // In both the Unity Editor and builds, check if saved position data exists
         if (PlayerPrefs.HasKey("LastPlayerPosX") && PlayerPrefs.HasKey("LastPlayerPosY") && PlayerPrefs.HasKey("LastPlayerPosZ"))
         {
             float savedX = PlayerPrefs.GetFloat("LastPlayerPosX", 0f);
             float savedY = PlayerPrefs.GetFloat("LastPlayerPosY", 1f);
             float savedZ = PlayerPrefs.GetFloat("LastPlayerPosZ", 0f);
+
+            // Ensure Y value is not below ground level
             Vector3 savedPosition = new Vector3(savedX, Mathf.Max(savedY, 1f), savedZ);
+
             SetPlayerPosition(savedPosition);
         }
         else
         {
+            // No saved data, start at default spawn point
             SetPlayerPosition(startingPosition);
         }
     }
@@ -43,12 +34,12 @@ public class SceneReturn : MonoBehaviour
 
         if (rb != null)
         {
-            // If Rigidbody is present, use MovePosition to respect physics
+            // Use MovePosition for physics-based movement
             rb.MovePosition(position);
         }
         else
         {
-            // If no Rigidbody, set position directly (not recommended for physics-based movement)
+            // Set position directly if no Rigidbody
             player.position = position;
         }
     }
